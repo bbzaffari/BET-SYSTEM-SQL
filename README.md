@@ -3,7 +3,7 @@ Complex bet sistem with python and SQL
 
 ## Introduction
 
-**BET-SYSTEM-SQL** is a command-line betting prototype built in Python with a **PostgreSQL** backend (via `psycopg2`). This project was created **a few years ago** as an academic/learning exercise to **test integration concepts**, not to optimize design or polish architecture. The goal was to explore end-to-end data flow (capture → validation → persistence → reporting) while coordinating time-based behavior and concurrent input.
+**BET-SYSTEM-SQL** is a command-line betting prototype built in Python with a **PostgreSQL** backend (via `psycopg2`). This project was created **a few years ago** as an academic/learning exercise to **test integration concepts**, not to optimize design or polish architecture. The goal was to explore end-to-end data flow (capture -> validation -> persistence -> reporting) while coordinating time-based behavior and concurrent input.
 
 Key ideas explored here:
 - **DB integration:** direct SQL against PostgreSQL (see `abrir_conexao_e_cursor()` for credentials), daily tables, and a historical `SORTEIO` ledger.
@@ -49,6 +49,8 @@ It’s an **11-digit number** with two **check digits** (a Mod-11 style checksum
 
 
 ---
+
+Side notes
 ---
 
 ## What is an ORM? 
