@@ -11,6 +11,8 @@ Key ideas explored here:
 - **Concurrency:** a lightweight **producer–consumer** pattern using threads (background time watcher + non-blocking input queue) to **auto-lock betting windows** based on configurable hours.
 - **Reasoned “density”:** some sections are intentionally verbose/technical; they include inline explanations on **why certain variable types and structures** were chosen in specific places.
 
+[**Bruno_Bavaresco_Zaffari_ITAcademy_TemplateResolucaoExercicio_Turma20.pdf***](https://github.com/bbzaffari/BET-SYSTEM-SQL/blob/main/Bruno_Bavaresco_Zaffari_ITAcademy_TemplateResolucaoExercicio_Turma20.pdf)
+
 > Note  
 > There are **better, more concise ways** to implement several parts today (e.g., schedulers/executors, parameterized queries/ORM, clearer module boundaries). This repository remains as **documentation of the learning path** and integration experiments rather than a production-grade design.
 > The goal back then was to **write SQL by hand** to understand schema design, types, constraints, transactions, and the full data flow.  
