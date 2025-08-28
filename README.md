@@ -19,3 +19,12 @@ Idle --> Betting: 08:00 <= now < 20:00
 Betting --> Drawing: now >= 20:00
 Drawing --> Closed
 Closed --> Idle: now < 08:00 (next day)
+
+## Design Notes / Rationale
+
+- **Explicit types & constraints:** e.g., `CPF VARCHAR(11) CHECK (LENGTH(CPF)=11)` to preserve leading zeros and keep validation readable.
+- **Daily tables & sequences:** using `apostas_YYYYMMDD` and restarting sequences at 1000 improved operator UX during tests.
+- **Verbosity on purpose:** code comments explain *why* certain variable types and data structures were picked.
+- **Concurrency:** threads were used to decouple input capture from time-based state transitions in a simple, didactic way.
+
+> Today, many of these could be simplified (e.g., parameterized queries, one `aposta` table with `DATE`, schedulers/executors), but they remain here to document integration experiments.
