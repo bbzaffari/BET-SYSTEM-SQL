@@ -1,5 +1,6 @@
 # BET-SYSTEM-SQL
-Complex bet sistem with python and SQL
+
+
 
 ## Introduction
 
@@ -12,7 +13,8 @@ Key ideas explored here:
 
 > Note  
 > There are **better, more concise ways** to implement several parts today (e.g., schedulers/executors, parameterized queries/ORM, clearer module boundaries). This repository remains as **documentation of the learning path** and integration experiments rather than a production-grade design.
-
+> The goal back then was to **write SQL by hand** to understand schema design, types, constraints, transactions, and the full data flow.  
+> It was **not** about polishing architecture or minimizing code.
 
 [*] --> Idle \
 Idle --> Betting: 08:00 <= now < 20:00 \
