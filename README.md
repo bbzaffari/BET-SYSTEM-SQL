@@ -49,8 +49,6 @@ It’s an **11-digit number** with two **check digits** (a Mod-11 style checksum
 
 
 ---
-
-# Side notes
 ---
 
 ## What is an ORM? 
