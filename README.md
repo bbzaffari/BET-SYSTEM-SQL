@@ -28,10 +28,32 @@ Closed --> Idle: now < 08:00 (next day)
 - **Concurrency:** threads were used to decouple input capture from time-based state transitions in a simple, didactic way.
 
 
+## What is CPF (Brazil)?
+
+**CPF** (_Cadastro de Pessoas Físicas_) is Brazil’s **individual taxpayer identifier**.  
+It’s an **11-digit number** with two **check digits** (a Mod-11 style checksum) used to uniquely identify a person in tax, banking, e-commerce, and many civil workflows. In practice, it often functions as a stable key for user records.
+
+### Closest international equivalents (for readers abroad)
+
+- **United States:** **SSN** (Social Security Number) — widely used identifier in finance/tax.
+- **European contexts (by country, not EU-wide):**  
+  - **Portugal:** **NIF** (tax number)  
+  - **Spain:** **NIF/NIE**  
+  - **Italy:** **Codice Fiscale**  
+  - **Germany:** **Steuer-ID** (IdNr)  
+  - **France:** **NIR** (Numéro de sécu / INSEE)  
+  - **Netherlands:** **BSN**  
+  - **United Kingdom:** **NINO** (National Insurance Number)
+
+> These are **analogies**, not legal equivalents. Each country has its own rules for issuance and privacy.
+
+
 ---
 ---
 
-## What is an ORM?
+## What is an ORM? 
+
+***Not used in this project scope***
 
 **ORM (Object–Relational Mapping)** is a technique—and a set of libraries—that map **database tables** to **classes/objects** in code.  
 Instead of writing raw `SELECT/INSERT/UPDATE` SQL, you work with objects (`User`, `Bet`, `Event`), and the ORM generates **safe, parameterized** SQL under the hood.
