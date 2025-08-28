@@ -12,3 +12,10 @@ Key ideas explored here:
 
 > Note  
 > There are **better, more concise ways** to implement several parts today (e.g., schedulers/executors, parameterized queries/ORM, clearer module boundaries). This repository remains as **documentation of the learning path** and integration experiments rather than a production-grade design.
+
+
+[*] --> Idle 
+Idle --> Betting: 08:00 <= now < 20:00
+Betting --> Drawing: now >= 20:00
+Drawing --> Closed
+Closed --> Idle: now < 08:00 (next day)
